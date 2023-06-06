@@ -1,0 +1,125 @@
+/**
+ * 全局统一配置
+ * */
+
+ext {
+
+    /***
+     * module 全局开关声明.
+     */
+
+    isModule_Login = false
+    isModule_Main = false
+
+    android = [
+            applicationId: "com.storm.stormmoduledemo",
+            versionCode  : 1,
+            versionName  : "1.0",
+
+            compileSdk   : 33,
+            minSdk       : 24,
+            targetSdk    : 23,
+    ]
+
+    /**
+     * 版本管理
+     */
+
+    versions = [
+
+
+            core_ktx_version             : '1.8.0',
+            appcompat_version            : '1.4.1',
+            material_version             : '1.5.0',
+            junit_version                : '4.13.2',
+            constraintlayout_version     : '2.1.3',
+            recyclerview_version         : '1.2.1',
+
+            ext_junit_version            : "1.1.3",
+            espresso_core_version        : "3.4.0",
+
+
+            lifecycle_runtime_ktx_version: "2.5.1",
+            activity_compose_version     : "1.5.1",
+
+            //kotlin 相关
+            activity_ktx_version         : '1.5.1',
+
+            // compose:
+
+            activity_compose_version     : '1.5.1',
+
+            //网络请求
+            retrofit_version             : '2.9.0',
+            converter_gson_version       : '2.5.0',
+            okio_version                 : '3.0.0-alpha.9',
+            adapter_rxjava3              : '2.9.0',
+
+            // interceptor
+            logging_interceptor_version  : '3.14.1',
+
+            // glide
+            glide_version                : '4.12.0',
+            glide_compiler_version       : "4.12.0",
+
+            // rxjava rxkotlin
+            rxkotlin_version             : '3.0.0',
+            rxandroid_version            : '3.0.0',
+            rxjava_version               : '3.0.4',
+
+            // 阿里路由
+            arouter_api_version          : '1.5.2',
+            arouter_compiler_version     : '1.5.2',
+
+    ]
+
+    dependencies = [
+            core_ktx             : "androidx.core:core-ktx:${versions.core_ktx_version}",
+            appcompat            : "androidx.appcompat:appcompat:${versions.appcompat_version}",
+            material             : "com.google.android.material:material:${versions.material_version}",
+            constraintlayout     : "androidx.constraintlayout:constraintlayout:${versions.constraintlayout_version}",
+            junit                : "junit:junit:${versions["junit_version"]}",
+            ext_junit            : "androidx.test.ext:junit:${versions["ext_junit_version"]}",
+            espresso_core        : "androidx.test.espresso:espresso-core:${versions["espresso_core_version"]}",
+
+            // recycleview
+
+            recyclerview         : "androidx.recyclerview:recyclerview:${versions.recyclerview_version}",
+            lifecycle_runtime_ktx: "androidx.lifecycle:lifecycle-runtime-ktx:$versions.lifecycle_runtime_ktx_version)",
+            activity_compose     : "androidx.activity:activity-compose$versions.activity_compose_version",
+
+
+            // 阿里路由
+            arouter_api          : "com.alibaba:arouter-api:${versions.arouter_api_version}",
+            arouter_compiler     : "com.alibaba:arouter-compiler:${versions.arouter_compiler_version}",
+
+
+            //网络请求
+
+            retrofit             : "com.squareup.retrofit2:retrofit:${versions.retrofit_version}",
+
+
+
+            rxkotlin             : "io.reactivex.rxjava3:rxkotlin:${versions.rxkotlin_version}",
+            rxandroid            : "io.reactivex.rxjava3:rxandroid:${versions.rxandroid_version}",
+            rxjava               : "io.reactivex.rxjava3:rxjava:${versions.rxjava_version}",
+
+
+            activity_ktx         : "androidx.activity:activity-ktx:${versions.activity_ktx_version}",
+
+
+            converter_gson       : "com.squareup.retrofit2:converter-gson:${versions.converter_gson_version}",
+            //okhttp提供的请求日志拦截器
+            logging_interceptor  : "com.squareup.okhttp3:logging-interceptor:${versions.logging_interceptor_version}",
+
+            okio                 : "com.squareup.okio:okio:${versions.okio_version}",
+            adapter_rxjava3      : "com.squareup.retrofit2:adapter-rxjava3:${versions.adapter_rxjava3}",
+
+            // Glide 图片加载
+            glide                : "com.github.bumptech.glide:glide:${versions.glide_version}",
+            glide_compiler       : "com.github.bumptech.glide:compiler:${versions.glide_compiler_version}",
+
+
+            activity_compose     : "androidx.activity:activity-compose:${versions.activity_compose_version}"
+    ]
+}
